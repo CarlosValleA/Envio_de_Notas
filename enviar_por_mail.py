@@ -39,7 +39,7 @@ class Mail:
             print(f"Progreso {100*correo_index/total_a_enviar:0.1f}%, enviando a {correo}")
             # enviar
 
-            reporte = reporte.format(table=tabulate(reporte))
+            #reporte = reporte.format(table=tabulate(reporte))
             
             self.send(['cgvalle@uc.cl'], self.asunto, reporte)
             sleep(15)  # Delay entre correos no bajar demasiado o puede que se sature
