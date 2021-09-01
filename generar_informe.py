@@ -17,7 +17,7 @@ class GenerarInforme:
         # Entrega el valor y comentario en formato de tupla de una celda
         
         reporte = f"""
-        Hola {self.valor('D')}!
+        Hola {self.valor('D')} {self.valor('C')}!
 
         Items                                               nota      Comentario:
         Informe
@@ -26,22 +26,7 @@ class GenerarInforme:
             Redacción                                    {self.valor('G'):0.2f}      {self.comentario('G')}
             Ortografía                                     {self.valor('H'):0.2f}      {self.comentario('H')}
             Final                                              {self.valor('I'):0.2f}      {self.comentario('I')}
-    
-        Solución
-            Calidad                                         {self.valor('J'):0.2f}      {self.comentario('J')}
-            Diseño robusto y rápido               {self.valor('K'):0.2f}      {self.comentario('K')}
-            Experimentos y data                     {self.valor('L'):0.2f}      {self.comentario('L')}
-            Código Entendible                        {self.valor('M'):0.2f}      {self.comentario('N')}
-            Final                                              {self.valor('N'):0.2f}      {self.comentario('M')}
-    
-        Resultados
-            Porcentaje                                     {self.valor('O'):0.2f}      {self.comentario('O')}
-            Final                                              {self.valor('P'):0.2f}      {self.comentario('P')}
-        
-        Nota Final                                            {self.valor('Q'):0.2f}      {self.comentario('Q')}
-    
 
-        Saludos
 
 
         """

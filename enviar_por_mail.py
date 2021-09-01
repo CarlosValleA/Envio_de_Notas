@@ -41,9 +41,9 @@ class Mail:
 
             #reporte = reporte.format(table=tabulate(reporte))
             
-            self.send(['cgvalle@uc.cl'], self.asunto, reporte)
+            self.send([correo], self.asunto, reporte)
             sleep(15)  # Delay entre correos no bajar demasiado o puede que se sature
-            break
+            
 
         print("Todos los reportes fueron enviados de manera correcta :)")
         print(f"Se demoro {time() - t} segundos.")

@@ -2,9 +2,9 @@ from generar_informe import GenerarInforme
 from enviar_por_mail import Mail
 
 
-archivo = "notas.xlsx"
+archivo = "Notas.xlsx"
 hoja = "T1_mail"
-asunto = "Notas Tarea 1"  # Asunto del correo
+asunto = "Notas Tarea 2"  # Asunto del correo
 
 
 # Funcion para generar los reportes. Si se quiere modificar la estructura
