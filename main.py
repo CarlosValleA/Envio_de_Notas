@@ -4,7 +4,7 @@ from enviar_por_mail import Mail
 
 archivo = "Notas.xlsx"
 hoja = "T1_mail"
-asunto = "Notas Tarea 2"  # Asunto del correo
+asunto = "Notas Tarea 3"  # Asunto del correo
 
 
 # Funcion para generar los reportes. Si se quiere modificar la estructura

@@ -22,12 +22,9 @@ class Mail:
 
         for email in emails:
             # Mensaje
-            mensaje = MIMEText(content, 'mixed', 'utf-8')
-            mensaje['From'] = self.sender_mail
-            mensaje['To'] = email
-            mensaje['Subject'] = Header(self.asunto, 'utf-8')    
-
-            result = service.sendmail(self.sender_mail, email, mensaje.as_string())
+            mensaje = f"Subject: {subject}\n{content}"
+            mensaje = mensaje.encode("utf-8",'ignore')
+            result = service.sendmail(self.sender_mail, email, mensaje )
 
         service.quit()
 
